@@ -23,7 +23,7 @@
         <groupId>net.smartcosmos</groupId>
         <artifactId>smartcosmos-build</artifactId>
         <version>3.0.0-SNAPSHOT</version>
-        <relativePath/>
+        <relativePath></relativePath>
     </parent>
     <artifactId>smartcosmos-config-server</artifactId>
     <name>SMART COSMOS Configuration Server</name>
