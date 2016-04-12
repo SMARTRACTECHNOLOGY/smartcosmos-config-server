@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+management:
+  context-path: /admin
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /admin/info
+    healthCheckUrlPath: /admin/health
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${CONFIG_FILE_URI:https://github.com/SMARTRACTECHNOLOGY/smartcosmos-cluster-config}
+          basedir: target/config
+
+info:
+  project:
+    artifactId: @project.artifactId@
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
