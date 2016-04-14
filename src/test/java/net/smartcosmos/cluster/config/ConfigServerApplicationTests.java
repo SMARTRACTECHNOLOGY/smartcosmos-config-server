@@ -25,24 +25,24 @@ import org.springframework.util.MultiValueMap;
 @IntegrationTest("server.port=0")
 public class ConfigServerApplicationTests {
 
-	@Value("${local.server.port}")
-	private int port = 0;
+    @Value("${local.server.port}")
+    private int port = 0;
 
-	@Test
-	public void configurationAvailable() {
-		@SuppressWarnings("rawtypes")
-		ResponseEntity<Map> entity = new TestRestTemplate()
-				.getForEntity("http://localhost:" + port + "/app/cloud", Map.class);
-		assertEquals(HttpStatus.OK, entity.getStatusCode());
-	}
+    @Test
+    public void configurationAvailable() {
+        @SuppressWarnings("rawtypes")
+        ResponseEntity<Map> entity = new TestRestTemplate()
+                .getForEntity("http://localhost:" + port + "/app/cloud", Map.class);
+        assertEquals(HttpStatus.OK, entity.getStatusCode());
+    }
 
-	@Test
-	public void envPostAvailable() {
-		MultiValueMap<String, String> form = new LinkedMultiValueMap<>();
-		@SuppressWarnings("rawtypes")
-		ResponseEntity<Map> entity = new TestRestTemplate().postForEntity(
-				"http://localhost:" + port + "/admin/env", form, Map.class);
-		assertEquals(HttpStatus.OK, entity.getStatusCode());
-	}
+    @Test
+    public void envPostAvailable() {
+        MultiValueMap<String, String> form = new LinkedMultiValueMap<>();
+        @SuppressWarnings("rawtypes")
+        ResponseEntity<Map> entity = new TestRestTemplate().postForEntity(
+                "http://localhost:" + port + "/admin/env", form, Map.class);
+        assertEquals(HttpStatus.OK, entity.getStatusCode());
+    }
 
 }

@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigServer
 public class ConfigServerApplication {
 
-	public static void main(String[] args) {
-		new SpringApplicationBuilder(ConfigServerApplication.class).web(true).run(args);
-	}
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(ConfigServerApplication.class).web(true).run(args);
+    }
 
 }
