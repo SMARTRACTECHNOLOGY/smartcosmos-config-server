@@ -5,3 +5,17 @@ ifdef::env-github[:REPO: smartcosmos-config-server]
 ifdef::env-github[:BRANCH: master]
 
 image::https://travis-ci.org/{USER}/{REPO}.svg?branch={BRANCH}[Build Status, link=https://travis-ci.org/{USER}/{REPO}]
+
+== Running
+
+IMPORTANT: **Prerequisites:** to use the encryption and decryption features
+you need the full-strength JCE installed in your JVM (it's not there by default).
+You can download the "Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files"
+from Oracle, and follow instructions for installation (essentially replace the 2 policy files
+in the JRE lib/security directory with the ones that you downloaded).
+
+For a script to assist in configuring Java and the full-strength JCE see https://gist.github.com/voor/b2dd473db296d9eae004[Install Java 8 gist]
+
+IMPORTANT: If you use the default configuration it is encrypted and requires the encryption password to be set in the `ENCRYPT_KEY` variable.
+
+IMPORTANT: If you do not want to pull the configuration directly from github, you will need to set the `CONFIG_FILE_URI` variable.
