@@ -1,5 +1,5 @@
 
-FROM davidcaste/alpine-java-unlimited-jce
+FROM smartcosmos/java
 MAINTAINER The SMART COSMOS Authors
 
 ENV CONFIG_FILE_URI ''
