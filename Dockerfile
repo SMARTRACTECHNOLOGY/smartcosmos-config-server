@@ -1,6 +1,6 @@
 
 FROM smartcosmos/java
-MAINTAINER The SMART COSMOS Authors
+MAINTAINER SMART COSMOS Platform Core Team
 
 ENV CONFIG_FILE_URI ''
 ENV ENCRYPT_KEY ''
