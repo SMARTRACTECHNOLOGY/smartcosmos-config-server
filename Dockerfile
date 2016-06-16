@@ -14,5 +14,5 @@ ADD target/smartcosmos-*.jar  /opt/smartcosmos/
 
 
 EXPOSE 8888
-VOLUME ["/config-server"]
+
 CMD java -jar /opt/smartcosmos/smartcosmos*.jar
