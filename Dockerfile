@@ -10,9 +10,9 @@ ENV ENCRYPT_KEY ''
 ENV SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME ''
 ENV SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD ''
 
-ADD target/smartcosmos-*.jar  /opt/smartcosmos/
+ADD target/smartcosmos-*.jar  /opt/smartcosmos/smartcosmos-config-server.jar
 
 
 EXPOSE 8888
 
-CMD java -jar /opt/smartcosmos/smartcosmos*.jar
+CMD ["java", "-jar", "/opt/smartcosmos/smartcosmos-config-server.jar"]
