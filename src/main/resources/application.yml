@@ -17,6 +17,7 @@ spring:
         git:
           uri: ${CONFIG_FILE_URI:https://github.com/SMARTRACTECHNOLOGY/smartcosmos-cluster-config}
           basedir: target/config
+          default-label: ${CONFIG_SERVER_LABEL:master}
 
 info:
   project:
