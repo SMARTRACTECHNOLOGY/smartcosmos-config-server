@@ -2,7 +2,8 @@
 FROM smartcosmos/java
 MAINTAINER SMART COSMOS Platform Core Team
 
-ENV CONFIG_FILE_URI ''
+ENV CONFIG_FILE_URI '/https://github.com/SMARTRACTECHNOLOGY/smartcosmos-cluster-config'
+ENV CONFIG_SERVER_LABEL 'master'
 ENV ENCRYPT_KEY ''
 
 # if you want to use a github token set the USERNAME to be the token
