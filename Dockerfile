@@ -16,4 +16,4 @@ ADD target/smartcosmos-*.jar  /opt/smartcosmos/smartcosmos-config-server.jar
 
 EXPOSE 8888
 
-CMD ["java", "-jar", "/opt/smartcosmos/smartcosmos-config-server.jar"]
+CMD ["java", "-Xmx256m", "-jar", "/opt/smartcosmos/smartcosmos-config-server.jar"]
