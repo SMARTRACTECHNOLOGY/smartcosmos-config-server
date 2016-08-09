@@ -26,6 +26,7 @@
         <relativePath></relativePath>
     </parent>
     <artifactId>smartcosmos-config-server</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
     <name>SMART COSMOS Configuration Server</name>
     <description>Server that stores configuration values in a git repository for configuration control, auditing,
         history, and tagging environments.</description>
