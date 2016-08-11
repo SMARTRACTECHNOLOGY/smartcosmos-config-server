@@ -25,6 +25,8 @@ node_modules/
 .settings
 .checkstyle
 
+release.properties
+
 dependency-reduced-pom.xml.bak
 
 *.log
