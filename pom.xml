@@ -23,10 +23,10 @@
         <groupId>net.smartcosmos</groupId>
         <artifactId>smartcosmos-build</artifactId>
         <version>3.0.0</version>
-        <relativePath></relativePath>
+        <relativePath />
     </parent>
     <artifactId>smartcosmos-config-server</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1-SNAPSHOT</version>
     <name>SMART COSMOS Configuration Server</name>
     <description>Server that stores configuration values in a git repository for configuration control, auditing,
         history, and tagging environments.</description>
@@ -60,6 +60,6 @@
         <connection>scm:git:ssh://git@github.com/SMARTRACTECHNOLOGY/smartcosmos-config-server.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/SMARTRACTECHNOLOGY/smartcosmos-config-server.git</developerConnection>
         <url>https://github.com/SMARTRACTECHNOLOGY/smartcosmos-config-server/tree/master/</url>
-        <tag>v3.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 </project>
