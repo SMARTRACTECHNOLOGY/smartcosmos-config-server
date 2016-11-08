@@ -9,6 +9,9 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.Configuration;
 
+import net.smartcosmos.annotation.EnableSmartCosmosMonitoring;
+
+@EnableSmartCosmosMonitoring
 @Configuration
 @EnableAutoConfiguration
 @EnableConfigServer
