@@ -11,6 +11,7 @@ eureka:
     healthCheckUrlPath: /admin/health
 
 spring:
+  profiles.active: ${SPRING_PROFILES:git}
   cloud:
     config:
       server:
@@ -18,6 +19,8 @@ spring:
           uri: ${CONFIG_FILE_URI:https://github.com/SMARTRACTECHNOLOGY/smartcosmos-cluster-config}
           basedir: target/config
           default-label: ${CONFIG_SERVER_LABEL:master}
+        native:
+          search-locations: ${CONFIG_SEARCH_LOCATIONS}
 
 info:
   project:
