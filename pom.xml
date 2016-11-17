@@ -22,11 +22,11 @@
     <parent>
         <groupId>net.smartcosmos</groupId>
         <artifactId>smartcosmos-build</artifactId>
-        <version>3.0.1-SNAPSHOT</version>
+        <version>3.1.2</version>
         <relativePath></relativePath>
     </parent>
     <artifactId>smartcosmos-config-server</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.2-SNAPSHOT</version>
     <name>SMART COSMOS Configuration Server</name>
     <description>Server that stores configuration values in a git repository for configuration control, auditing,
         history, and tagging environments.</description>
@@ -37,7 +37,7 @@
         <dependency>
             <groupId>net.smartcosmos</groupId>
             <artifactId>smartcosmos-framework-monitoring</artifactId>
-            <version>3.0.1-SNAPSHOT</version>
+            <version>3.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
