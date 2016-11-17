@@ -13,9 +13,11 @@ ENV SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME ''
 ENV SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD ''
 ENV SPRING_PROFILES ''
 
+ENV JAVA_OPTS '-Xmx256m'
+
 ADD target/smartcosmos-*.jar  /opt/smartcosmos/smartcosmos-config-server.jar
 
 
 EXPOSE 8888
 
-CMD ["java", "-Xmx256m", "-jar", "/opt/smartcosmos/smartcosmos-config-server.jar"]
+CMD ["java", "$JAVA_OPTS", "-jar", "/opt/smartcosmos/smartcosmos-config-server.jar"]
