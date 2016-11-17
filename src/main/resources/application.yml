@@ -14,6 +14,7 @@ spring:
   profiles.active: ${SPRING_PROFILES:git}
   cloud:
     config:
+      allowOverride: true
       server:
         git:
           uri: ${CONFIG_FILE_URI:https://github.com/SMARTRACTECHNOLOGY/smartcosmos-cluster-config}
